@@ -35,4 +35,3 @@ Age: 30
 9-	Try debuggers in the browser and log some debugging messages to the console log.
 10-	Try lecture example on: Hoisting, let, const.
 
-ات
