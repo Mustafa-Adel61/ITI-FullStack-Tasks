@@ -1,0 +1,24 @@
+.p1{
+    display: none;
+    background-color: cadetblue;
+    color:azure;
+    text-align: center; 
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+}
+th {
+    background-color: #f2f2f2;
+}
+/* إخفاء الجدول افتراضيًا */
+#userTable {
+    display: none;
+}

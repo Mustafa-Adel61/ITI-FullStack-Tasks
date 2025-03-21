@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="./main.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <p class="p1" id="myp"></p>
+    <script>
+        //#1 task
+       "use strict"; 
+       alert("Welcome to my site")
+       var name=prompt("Enter Your Name :");
+       var userName= document.getElementById("myp");
+       userName.innerHTML="Welcome "+name;
+       userName.style.display="block";
+       //document.write("Welcome "+name);
+       
+
+
+       //#2 task
+       function _clickForSum(){
+        var first=parseInt(prompt("Enter the first number"));
+        var second=parseInt(prompt("Enter the second number"));
+        var _sum=sum(first,second);
+        alert(`Sum of ${first} and ${second} is :${_sum}`);
+       }
+       //#3 task
+       function _clickForTemperature(){
+        var value=parseInt(prompt("Enter the Temperature"));
+        var CaseOfTemperature =temperature(value);
+        alert(`Case Of Temperature is : ${CaseOfTemperature}`);
+       }
+       //#4 task
+       function _clickForTemperature_ActualFeel(){
+        var value1=parseInt(prompt("Enter the Temperature"));
+        var value2=parseInt(prompt("Enter the Actual Fell"));
+        var CaseOfTemperature =Temperature_ActualFeel(value1,value2);
+       }
+       //#5 task
+       function _clickForFuculty(){
+        var value=prompt("Please Enter Your Faculty");
+        Student_faculty(value);
+       }
+       //#6 task
+       function _clickForOddNumber(){
+        var start=parseInt( prompt("Please Enter start Number "));
+        var end=parseInt(prompt("Please Enter End Number "));
+        OddNumber(start,end);
+       }
+       //#7 task
+       function _clickForExpression (){
+        var expression=prompt("Please Enter the expression ");
+        var result=mathExpression(expression)
+        alert("You entered: "+expression+", and the result is: "+ result);
+       }
+    </script>
+    
+    
+    <button style="background-color: aqua; display: block;" onclick="_clickForSum()">SUM</button>
+    <button style="background-color: aqua; display: block;" onclick="_clickForTemperature()">Check Temperature</button>
+    <button style="background-color: aqua; display: block;" onclick="_clickForTemperature_ActualFeel()">Check Temperature And Actual Feel</button>
+    <button style="background-color: aqua; display: block;" onclick="_clickForFuculty()">Get Track by My faculty</button>
+    <button style="background-color: aqua; display: block;" onclick="_clickForOddNumber()">Get Odd Numbers Between Two Numbers</button>
+    <button style="background-color: aqua; display: block;" onclick="_clickForExpression()">Enter Expression</button>
+    <button style="background-color: aqua; display: block;" onclick="UserData()">User Data</button>
+  
+
+   <table class="mytable" id="userTable">
+    <tr>
+        <th>Name</th>
+        <th>Birth Year</th>
+        <th>Age</th>
+    </tr>
+   
+    <tbody id="tableBody"></tbody>
+  </table>
+   
+    <script src="./myJS.js"></script>  
+</body>
+</html>
